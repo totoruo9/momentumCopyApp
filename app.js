@@ -1,25 +1,15 @@
 const loginForm = document.querySelector("#login-form");
-const loginInput = loginForm.querySelector("input");
-const loginButton = loginForm.querySelector("button");
+const loginInput = document.querySelector("#login-form input");
+const greeting = document.querySelector("#greeting");
 
-const innerText = document.querySelector("h1");
+const HIDDEN_CLASSNAME = "hidden";
 
-/*function onLoginBtnClick(){
-    console.log(loginInput.value.length);
-}
+function onLoginSubmit(e){
+    e.preventDefault();
+    const username = loginInput.value;
+    loginForm.classList.add(HIDDEN_CLASSNAME);
+    greeting.innerText = `Hello ${username}`;
+    greeting.classList.remove(HIDDEN_CLASSNAME);
+};
 
-function onChangeLoginInput(e){
-    if(!loginInput.value.length){
-        loginButton.disabled = true;
-        innerText.innerText = "Inner Text";
-    }else if(loginInput.value.length > 15){
-        loginButton.disabled = true;
-        innerText.innerText = "Is to long name";
-    }else {
-        loginButton.disabled = false;
-        innerText.innerText = e.target.value;
-    }
-}
-
-loginButton.addEventListener("click", onLoginBtnClick);
-loginInput.addEventListener("input", onChangeLoginInput);*/
+loginForm.addEventListener("submit", onLoginSubmit);
