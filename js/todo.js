@@ -12,9 +12,9 @@ function saveToDos(){
 
 function deleteToDo(e){
     const li = e.target.parentElement;
+    li.remove();
     toDos = toDos.filter(item => item.id !== parseInt(li.id, 10));
     saveToDos();
-    li.remove();
 }
 
 function paintToDo({text, id}){
