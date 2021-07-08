@@ -33,10 +33,19 @@
         </form>
     </main>
     <footer>
-        <form id="todo-form">
-            <input type="text" placeholder="Write a To Do and Press Enter" required />
-        </form>
-        <ul id="todo-list"></ul>
+        <article class="todo-wrap">
+            <button>
+                <img src="img/icons/todo.png" src="todo icon" />
+                <p>할일 리스트</p>
+            </button>
+            <form id="todo-form" class="hidden">
+                <fieldset>
+                    <legend>오늘 할 일을 알려주세요.</legend>
+                    <input type="text" placeholder="Write a To Do and Press Enter" required />
+                </fieldset>
+            </form>
+            <ul id="todo-list"></ul>
+        </article>
         <div id="quote">
             <p></p>
             <p></p>
