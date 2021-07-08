@@ -1,3 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&family=Noto+Sans+KR&display=swap');
+
+/* css default setting */
+:root {
+    --title-font-family: 'Do Hyeon', sans-serif;
+    --title--font-size: 2.5rem;
+}
+
+body, html {
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 16px;
+}
+
+body{
+    background-size: cover;
+    width:100vw;
+    height: 100vh;
+}
+
 .hidden {
     display: none !important;
+}
+
+
+
+/* 배경 색상 다운을 위한 cover layer */
+.bg-cover {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    background: rgba(0,0,0,.15);
+    z-index: -1;
+}
+
+
+/* form 기본 설정 */
+.default-form {
+    color: #fff;
+    text-align: center;
+    font-size: var(--title--font-size);
+}
+
+.default-form input {
+    color: #fff;
+    text-align: center;
+    font-size: 1.5rem;
+    width: 620px;
+    height: 80px;
+    border:0;
+    border-bottom: 1px solid #fff;
+    background-color: rgba(0,0,0,.0);
+}
+
+.default-form input:focus {
+    outline: none;
+}
+
+.default-form input::placeholder {
+    color: #fff;
+    font-size: 1rem;
+    opacity: .7;
+}
+
+
+/* header 영역 */
+header {
+    padding: 0px 20px 40px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.settings {
+    margin-top: 22px;
+}
+
+#weather {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    line-height: 2rem;
+}
+
+#weather p:last-child {
+    font-size: 1.5rem;
+}
+
+
+/* main 영역 */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#clock {
+    font-family: var(--title-font-family);
+    font-size: 18.75rem;
+    color: #fff;
+}
+
+#greeting {
+    font-size: 4rem;
+    color: #fff;
+    font-family: var(--title-font-family);
+}
+
+/* footer 영역 */
+#quote {
+    width: 100vw;
+    color: #fff;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#quote p:first-child {
+    opacity: .8;
+}
+
+#quote p:last-child {
+    margin-top: 12px;
+    opacity: .6;
 }

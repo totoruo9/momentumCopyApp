@@ -41,11 +41,11 @@ const quotes = [
     },
 ];
 
-const getQuote = document.querySelector("#quote span:first-child");
-const getAuthor = document.querySelector("#quote span:last-child");
+const getQuote = document.querySelector("#quote p:first-child");
+const getAuthor = document.querySelector("#quote p:last-child");
 
 const randomNum = Math.floor(Math.random()*quotes.length);
 const {quote, author} = quotes[randomNum];
 
 getQuote.innerText = `${quote}`
-getAuthor.innerText = `${author}`
+getAuthor.innerText = `-${author}-`

@@ -13,8 +13,12 @@ const images = [
 
 const chosenImage = images[Math.floor(Math.random() * images.length)];
 
-const bgImage = document.createElement("img");
+/*const bgImage = document.createElement("img");
 
 bgImage.src = `img/${chosenImage}`;
 
-document.body.appendChild(bgImage);
+document.body.appendChild(bgImage);*/
+
+
+const body = document.body;
+body.style.background = `center  / cover url(img/${chosenImage}) no-repeat rgba(0,0,0,.5)`
