@@ -54,7 +54,7 @@ button {
     text-align: center;
     font-size: 1.5rem;
     width: 620px;
-    height: 56px;
+    height: 48px;
     border:0;
     border-bottom: 1px solid #fff;
     background-color: rgba(0,0,0,.0);
@@ -115,12 +115,12 @@ header {
 }
 
 #settings-layer form {
-    padding:20px 20px 40px;
+    padding:20px 20px;
     text-align: center;
 }
 
 #settings-layer legend {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     color: #fff;
     margin-bottom: 20px;
 }
@@ -138,7 +138,7 @@ header {
     border:0;
     border-bottom: 1px solid #fff;
     background: rgba(0,0,0,.0);
-    height: 56px;
+    height: 48px;
     color: #fff;
     font-size: 1.5rem;
 }
@@ -165,29 +165,33 @@ main {
 
 #clock {
     font-family: var(--title-font-family);
-    font-size: 18.75rem;
+    font-size: 16rem;
     color: #fff;
 }
 
 #greeting {
-    font-size: 4rem;
+    font-size: 3rem;
     color: #fff;
     font-family: var(--title-font-family);
 }
 
 #todayGoal {
-    margin-top: 64px;
+    margin-top: 40px;
     color: #fff;
     text-align: center;
+    padding: 20px 40px;
+    box-sizing: border-box;
+    background:rgba(0,0,0,.35);
+    border-radius: 10px;
 }
 
 #todayGoal h3 {
-    font-size: 2.5rem;
+    font-size: 2rem;
 }
 
 #todayGoal p {
     font-family: var(--title-font-family);
-    font-size: 4rem;
+    font-size: 3rem;
     margin-top:24px;
 }
 
