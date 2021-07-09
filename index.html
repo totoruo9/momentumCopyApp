@@ -12,7 +12,10 @@
     <div class="bg-cover"></div>
     <header>
         <div class="settings">
-            <img src="img/icons/setting.png" alt="setting" />
+            <button>
+                <img src="img/icons/setting.png" alt="setting" />
+            </button>
+            
         </div>
         <div id="weather">
             <div class="icon"></div>
@@ -29,6 +32,16 @@
             <fieldset>
                 <legend>당신의 이름을 알려주세요.</legend>
                 <input required maxlength="15" type="text" placeholder="이름 입력 후,Enter키를 눌러주세요." id="username" name="username" />
+            </fieldset>
+        </form>
+        <div id="todayGoal" class="hidden" >
+            <h3>오늘의 목표</h3>
+            <p></p>
+        </div>
+        <form id="goal-form" class="default-form space-top hidden">
+            <fieldset>
+                <legend>오늘의 목표!</legend>
+                <input type="text" name="goal-input" id="goal-input" required placeholder="오늘의 목표는 무엇인가요?" />
             </fieldset>
         </form>
     </main>
@@ -56,6 +69,7 @@
 
     <script src="js/clock.js"></script>
     <script src="js/greetings.js"></script>
+    <script src="js/todayGoal.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>

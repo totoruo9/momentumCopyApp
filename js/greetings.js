@@ -17,18 +17,18 @@ function onLoginSubmit(e){
 
 function paintGreeting(username){
     greeting.classList.remove(HIDDEN_CLASSNAME);
-    if(getHour >= 6 || getHour <= 11){
+    if(getHour >= 6 && getHour <= 11){
         greeting.innerText = `좋은 아침이네요, ${username}님`;
-    } else if(getHour >= 12 || getHour <= 17){
+    } else if(getHour >= 12 && getHour <= 17){
         greeting.innerText = `점심은 맛있게 드셨나요? ${username}님`;
-    } else if(getHour >= 18 || getHour <= 21){
+    } else if(getHour >= 18 && getHour <= 21){
         greeting.innerText = `${username}님, 오늘 저녁은 요리를 해보는 건 어떨까요?`;
-    } else if(getHour >= 12 || getHour <= 17){
+    } else if(getHour >= 12 && getHour <= 17){
         greeting.innerText = `${username}님, 이제 하루를 마무리 할 시간이네요.`;
     } else {
         greeting.innerText = `오늘 하루도 고생하셨습니다. ${username}님`;
-    }
-    
+    };
+    goalForm.classList.remove(HIDDEN_CLASSNAME);
 }
 
 const saveUsername = localStorage.getItem(USERNAME_KEY);
