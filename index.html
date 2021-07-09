@@ -33,27 +33,29 @@
         </form>
     </main>
     <footer>
-        <article class="todo-wrap">
-            <button>
+        <div class="todo-wrap">
+            <div class="todo hidden">
+                <form id="todo-form">
+                    <fieldset>
+                        <legend>오늘 할 일을 알려주세요.</legend>
+                        <input type="text" placeholder="할 일을 적고 Enter키를 눌러주세요" required />
+                    </fieldset>
+                </form>
+                <ul id="todo-list"></ul>
+            </div>
+            <button class="todo-btn">
                 <img src="img/icons/todo.png" src="todo icon" />
                 <p>할일 리스트</p>
             </button>
-            <form id="todo-form" class="hidden">
-                <fieldset>
-                    <legend>오늘 할 일을 알려주세요.</legend>
-                    <input type="text" placeholder="Write a To Do and Press Enter" required />
-                </fieldset>
-            </form>
-            <ul id="todo-list"></ul>
-        </article>
+        </div>
         <div id="quote">
             <p></p>
             <p></p>
         </div>
     </footer>
 
-    <script src="js/greetings.js"></script>
     <script src="js/clock.js"></script>
+    <script src="js/greetings.js"></script>
     <script src="js/quotes.js"></script>
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
