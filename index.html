@@ -20,7 +20,7 @@
                 <form id="name-change">
                     <fieldset>
                         <legend>이름 변경</legend>
-                        <input type="text" placeholder="입력 후 Enter를 눌러주세요.">
+                        <input type="text" placeholder="입력 후 Enter를 눌러주세요." autocomplete='off'>
                     </fieldset>
                 </form>
                 <form id="name-remove">
@@ -32,7 +32,7 @@
                 <form id="goal-change">
                     <fieldset>
                         <legend>목표 변경</legend>
-                        <input type="text" placeholder="입력 후 Enter를 눌러주세요.">
+                        <input type="text" placeholder="입력 후 Enter를 눌러주세요." autocomplete='off'>
                     </fieldset>
                 </form>
                 <form id="goal-remove">
@@ -63,7 +63,7 @@
         <form id="login-form" class="hidden default-form">
             <fieldset>
                 <legend>당신의 이름을 알려주세요.</legend>
-                <input required maxlength="15" type="text" placeholder="이름 입력 후,Enter키를 눌러주세요." id="username" name="username" />
+                <input required maxlength="15" type="text" placeholder="이름 입력 후,Enter키를 눌러주세요." id="username" name="username" autocomplete='off' />
             </fieldset>
         </form>
         <div id="todayGoal" class="hidden" >
@@ -73,7 +73,7 @@
         <form id="goal-form" class="default-form space-top hidden">
             <fieldset>
                 <legend>오늘의 목표!</legend>
-                <input type="text" name="goal-input" id="goal-input" required placeholder="오늘의 목표는 무엇인가요?" />
+                <input type="text" name="goal-input" id="goal-input" required placeholder="오늘의 목표는 무엇인가요?" autocomplete='off' />
             </fieldset>
         </form>
     </main>
@@ -83,7 +83,7 @@
                 <form id="todo-form">
                     <fieldset>
                         <legend>오늘 할 일을 알려주세요.</legend>
-                        <input type="text" placeholder="할 일을 적고 Enter키를 눌러주세요" required />
+                        <input type="text" placeholder="할 일을 적고 Enter키를 눌러주세요" required autocomplete='off' />
                     </fieldset>
                 </form>
                 <ul id="todo-list"></ul>

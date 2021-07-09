@@ -255,6 +255,16 @@ footer {
     justify-content: space-between;
 }
 
+#todo-list li input[type = "checkbox"]{
+    width:20px;
+    height: 20px;
+}
+
+#todo-list li input[type = "checkbox"]:checked + span{
+    text-decoration: line-through;
+    color: #aaa;
+}
+
 #todo-list li button {
     border: 0;
     background: rgba(0,0,0,.0);
