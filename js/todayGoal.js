@@ -16,7 +16,7 @@ function onTodayGoal(e){
 
 goalForm.addEventListener("submit", onTodayGoal);
 
-if(localStorage.goal){
+if(localStorage.goal && localStorage.username){
     todayGoalWrap.classList.remove(HIDDEN_CLASSNAME);
     todayGoal.innerText = localStorage.getItem(SET_GOAL)
 }else if(localStorage.username && !localStorage.goal ) {

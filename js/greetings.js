@@ -28,7 +28,11 @@ function paintGreeting(username){
     } else {
         greeting.innerText = `오늘 하루도 고생하셨습니다. ${username}님`;
     };
-    goalForm.classList.remove(HIDDEN_CLASSNAME);
+    if(!localStorage.goal){
+        const goalForm = document.querySelector("#goal-form");
+        goalForm.classList.remove(HIDDEN_CLASSNAME);
+    };
+    
 }
 
 const saveUsername = localStorage.getItem(USERNAME_KEY);

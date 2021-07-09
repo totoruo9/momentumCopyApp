@@ -12,10 +12,42 @@
     <div class="bg-cover"></div>
     <header>
         <div class="settings">
-            <button>
+            <button class="open-settings">
                 <img src="img/icons/setting.png" alt="setting" />
             </button>
-            
+            <div id="settings-layer" class="hidden">
+                <button class="close-settings">❌</button>
+                <form id="name-change">
+                    <fieldset>
+                        <legend>이름 변경</legend>
+                        <input type="text" placeholder="입력 후 Enter를 눌러주세요.">
+                    </fieldset>
+                </form>
+                <form id="name-remove">
+                    <fieldset>
+                        <legend>이름 삭제</legend>
+                        <button>❌</button>
+                    </fieldset>
+                </form>
+                <form id="goal-change">
+                    <fieldset>
+                        <legend>목표 변경</legend>
+                        <input type="text" placeholder="입력 후 Enter를 눌러주세요.">
+                    </fieldset>
+                </form>
+                <form id="goal-remove">
+                    <fieldset>
+                        <legend>목표 삭제</legend>
+                        <button>❌</button>
+                    </fieldset>
+                </form>
+                <form id="all-data-remove">
+                    <fieldset>
+                        <legend>전체 데이터 삭제</legend>
+                        <button>❌</button>
+                    </fieldset>
+                </form>
+            </div>
         </div>
         <div id="weather">
             <div class="icon"></div>
@@ -74,5 +106,6 @@
     <script src="js/background.js"></script>
     <script src="js/todo.js"></script>
     <script src="js/weather.js"></script>
+    <script src="js/settings.js"></script>
 </body>
 </html>
